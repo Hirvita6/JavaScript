@@ -1,0 +1,64 @@
+
+<html>
+   
+    
+    <head>
+        <title>Simple Interest</title>
+    </head>
+    
+    <body>
+        <form >
+           <h2>Calculation of Simple interest</h2>
+    
+        <script type="text/javascript">
+            
+            function data()
+            {
+    
+            var price =parseInt(document.getElementById("txt_1").value);
+            var rate =parseInt(document.getElementById("txt_2").value);
+            var years =parseInt(document.getElementById("txt_3").value);
+            var interest;
+            
+    
+            document.write("Price : "+price+" ₹");
+            document.write("<br>Rate : "+rate+" %");
+            document.write("<br>Time : "+years+" Years");
+    
+            interest=(price*rate*years)/100;
+    
+            document.write("<br>Interest  is "+interest+" ₹");
+    
+    
+            }
+    
+    
+        </script>
+        <table>
+            <tr>
+                <td>Amount:</td>
+                <td><input type="text" id="txt_1" placeholder="enter Principal of Amount"></td>
+                
+            </tr>
+            <tr>
+                <td>Rate:</td>
+                <td><input type="text" id="txt_2" placeholder="enter rate"></td>
+                
+            </tr>
+            <tr>
+                <td>Years:</td>
+                <td><input type="text" id="txt_3" placeholder="enter years"></td>
+                
+            </tr>
+           
+            <tr>
+                
+                <td colspan="2"><input type="button" value="Interest" onclick="data()"></td>
+            </tr>
+            
+        </table>
+    </form>
+    
+    </body>
+    
+    </html>
