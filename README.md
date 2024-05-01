@@ -1,0 +1,2 @@
+## Simple Interest Calculator 
+<h4>This repository contains a simple interest calculator programmed using HTML and JavaScript. The calculator allows users to input principal amount, interest rate, and time to calculate simple interest. It's a beginner-friendly project for anyone learning web development or JavaScript programming. Feel free to explore, contribute, or use it as a learning resource!</h4>
