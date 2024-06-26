@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Denomination Breakdown</title>
+</head>
+<body>
+    <h1>Denomination Breakdown</h1>
+    <label for="amount">Enter an amount:</label>
+    <input type="number" id="amount" name="amount">
+    <button onclick="calculateDenominations()">Calculate</button>
+    <div id="result"></div>
+
+    <script>
+        function calculateDenominations() {
+            let amount = document.getElementById('amount').value;
+            let resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = "";
+
+            let denominations = [500, 200, 100, 50, 20, 5, 2, 1];
+            let result = {};
+
+            denominations.forEach(function(denomination) {
+                let count = Math.floor(amount / denomination);
+                if (count > 0) {
+                    result[denomination] = count;
+                    amount -= denomination * count;
+                }
+            });
+
+            for (let denomination in result) {
+                resultDiv.innerHTML += `${denomination} * ${result[denomination]} = ${denomination * result[denomination]}<br>`;
+            }
+        }
+    </script>
+</body>
+</html>
