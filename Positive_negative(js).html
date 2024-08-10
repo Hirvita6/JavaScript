@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+    
+        <h1>Enter any number check number is Positive or Negative.</h1>
+        <script>
+
+            function data()
+            {
+                var n=parseInt(document.getElementById("text_n").value);
+
+                if(n>0)
+                {
+                    document.write(n+" number is Positive");
+                }
+                else if(n<0)
+                {
+                    document.write(n+" number is Negative");
+                }
+                else{
+                    document.write(n+" number is ZERO");
+                }
+            }
+            </script>
+            <table >
+                <tr>
+                    <td>Number:</td>
+                    <td><input type="text" id="text_n" placeholder="enter any number"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" id="butn" value="Check" onclick="data()"></td>
+                </tr>
+            </table>
+    
+</body>
+</html>
